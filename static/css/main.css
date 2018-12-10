@@ -1,0 +1,73 @@
+body {
+  overflow-x: hidden;
+}
+
+.extra-margin {
+  margin-top: 50px;
+}
+
+.form-control {
+  width: 70% !important;
+  margin: 5px;
+  border-color: rgba(20, 20, 200, .8);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 255, .3);
+  border-color: #fff;
+}
+
+#text::placeholder {
+  color: lightgrey;
+}
+
+.btn {
+  background-color: rgba(20, 20, 240, .3);
+  margin: 0px;
+  font-weight: 500;
+  color: rgba(20, 20, 255, .8);
+  border: 1px solid rgba(20, 20, 200, .8);
+}
+
+.btn-outline-success:focus, .btn-outline-success.focus {
+  box-shadow: none;
+}
+
+.btn-outline-success:hover {
+  background-color: rgba(20, 20, 255, .8);
+  font-weight: 600;
+  color: rgba(255, 255, 255, .7);
+  border: 1px solid rgba(255, 255, 255, .3);
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 255, .3);
+}
+
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
+.show > .btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: rgba(20, 20, 240, .8);
+  border-color: #fff;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .3rem rgba(230, 230, 255, .1);
+}
+
+.searched_photo {
+  margin: 10px 25px 5px;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  image-resolution: from-image;
+}
+
+.photo_card {
+  text-align: center;
+}
+
+figcaption {
+  margin-bottom: 30px;
+  max-width: 300px;
+}
