@@ -25,9 +25,14 @@ header {
   color: rgba(60, 60, 200, .4) !important;
 }
 
-.nav-link:focus {
-  color: rgba(120, 60, 220, 1) !important;
-  text-decoration: underline;
+.nav-link:focus, {
+  color: rgba(60, 60, 220, .3) !important;
+  text-shadow: 1px -1px rgba(60, 100, 200, .7);
+}
+
+.active{
+  color: rgba(60, 60, 220, .3) !important;
+  text-shadow: 1px -1px rgba(60, 100, 200, .7);
 }
 
 .extra-margin {
@@ -95,7 +100,7 @@ header {
 }
 
 .searched_photo {
-  margin: 10px 25px 5px;
+  /* margin: 10px 25px 5px; */
   width: auto;
   height: auto;
   max-height: 100%;
@@ -103,11 +108,10 @@ header {
   image-resolution: from-image;
 }
 
-.photo_card {
+.card {
   text-align: center;
-}
-
-figcaption {
   margin-bottom: 30px;
-  max-width: 300px;
+  max-width: auto;
+  border: 0px;
+
 }

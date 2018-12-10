@@ -31,7 +31,7 @@ $("#search_text").submit((event) => {
     let photo_card = '';
 
     for (let i = 0; i < response.photos.photo.length; i++) {
-        photo_card += `<div class="col-md-4"><figure class="photo_card"><a href="https://farm${response.photos.photo[i].farm}.staticflickr.com/${response.photos.photo[i].server}/${response.photos.photo[i].id}_${response.photos.photo[i].secret}.jpg"><img src="https://farm${response.photos.photo[i].farm}.staticflickr.com/${response.photos.photo[i].server}/${response.photos.photo[i].id}_${response.photos.photo[i].secret}.jpg" alt="${response.photos.photo[i].title}" class="searched_photo"></a><figcaption>${response.photos.photo[i].title}</figcaption></figure></div>`
+        photo_card += `<div class="col-md-4"><div class="card"><div class="card_photo"><a href="https://farm${response.photos.photo[i].farm}.staticflickr.com/${response.photos.photo[i].server}/${response.photos.photo[i].id}_${response.photos.photo[i].secret}.jpg"><img src="https://farm${response.photos.photo[i].farm}.staticflickr.com/${response.photos.photo[i].server}/${response.photos.photo[i].id}_${response.photos.photo[i].secret}.jpg" alt="${response.photos.photo[i].title}" class="searched_photo"></a><div class="card-title">${response.photos.photo[i].title}</div><div class="card-subtitle">subtitle</div><div class="card-text">cardtext</div></div></div></div>`
       };
       $(".photos").html(photo_card);
   });
