@@ -1,19 +1,55 @@
 body {
   overflow-x: hidden;
 }
+/*
+header {
+  position: sticky;
+} */
 
-.extra-margin {
-  margin-top: 50px;
+.navbar-brand {
+  font-size: 200%;
+  color: rgba(20, 20, 120, .8) !important;
+  font-variant-caps: small-caps;
+  font-weight: bold;
 }
 
+.nav-link {
+  color: rgba(20, 20, 180, .8) !important;
+  font-variant-caps: small-caps;
+  margin: 10px 0px;
+  font-weight: 500;
+  font-size: 110%;
+}
+
+.nav-link:hover {
+  color: rgba(60, 60, 200, .4) !important;
+}
+
+.nav-link:focus {
+  color: rgba(120, 60, 220, 1) !important;
+  text-decoration: underline;
+}
+
+.extra-margin {
+  margin-top: 25px;
+}
+
+/* .form-inline {
+  position: static;
+} */
+
 .form-control {
-  width: 70% !important;
+  left: 40% !important;
+  top: 20%;
+  position: absolute;
+  width: 20% !important;
+  /* max-width: 60% !important; */
   margin: 5px;
   border-color: rgba(20, 20, 200, .8);
 }
 
 .form-control:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 255, .3);
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 220, .3);
   border-color: #fff;
 }
 
@@ -22,11 +58,15 @@ body {
 }
 
 .btn {
-  background-color: rgba(20, 20, 240, .3);
-  margin: 0px;
+  left: 60.5% !important;
+  top: 20%;
+  position: absolute;
+  background-color: rgba(20, 20, 220, .3);
+  margin: 5px !important;
   font-weight: 500;
-  color: rgba(20, 20, 255, .8);
-  border: 1px solid rgba(20, 20, 200, .8);
+  color: rgba(20, 20, 120, .8);
+  border: 1px solid rgba(20, 20, 120, .8);
+  font-variant: small-caps;
 }
 
 .btn-outline-success:focus, .btn-outline-success.focus {
@@ -34,24 +74,24 @@ body {
 }
 
 .btn-outline-success:hover {
-  background-color: rgba(20, 20, 255, .8);
+  background-color: rgba(20, 20, 120, .8);
   font-weight: 600;
   color: rgba(255, 255, 255, .7);
   border: 1px solid rgba(255, 255, 255, .3);
-  box-shadow: 0 0 0 0.1rem rgba(0, 0, 255, .3);
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 220, .3);
 }
 
 
 .btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
 .show > .btn-outline-success.dropdown-toggle {
   color: #fff;
-  background-color: rgba(20, 20, 240, .8);
+  background-color: rgba(20, 20, 180, .8);
   border-color: #fff;
 }
 
 .btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-success.dropdown-toggle:focus {
-  box-shadow: 0 0 0 .3rem rgba(230, 230, 255, .1);
+  box-shadow: 0 0 0 .3rem rgba(200, 200, 255, .1);
 }
 
 .searched_photo {

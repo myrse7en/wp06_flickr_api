@@ -12,18 +12,37 @@
 
   <body>
     <!-- insert header using jQuery -->
-    <header id="nav"></header>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Flickr API</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="row extra-margin">
-      <div class="col-md-6 offset-md-3">
-        <form class="form-inline" action="" method="post" id="search_text">
-          <input type="text" id="keyword" class="form-control" placeholder="Enter keyword(s)....">
-          <input type="submit" class="btn btn-outline-success my-2 my-sm-0" value="Search">
-        </form>
-      </div>
-    </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/myrse7en/">GitHub</a>
+            </li>
+          </ul>
+          <!-- Personal Search Form -->
+          <!-- <div class="row extra-margin"> -->
+            <div>
+              <form class="form-inline" action="" method="post" id="search_text">
+                <input type="text" id="keyword" class="form-control" placeholder="Enter keyword(s)....">
+                <input type="submit" class="btn btn-outline-success my-2 my-sm-0" value="Search">
+              </form>
+            </div>
+          </div>
+        <!-- </div> -->
+      </nav>
+    </header>
 
-    <div class="container">
+
+    <div class="container extra-margin">
       <div class="row">
         <div class="col-md-12">
           <div class="row photos">
